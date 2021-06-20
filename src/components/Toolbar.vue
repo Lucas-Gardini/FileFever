@@ -65,6 +65,7 @@ export default {
 	background-color: #202020;
 	color: white;
 	-webkit-app-region: none !important;
+	outline: none !important;
 }
 
 .ToolBar button.tb-minimize:hover {

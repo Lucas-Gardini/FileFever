@@ -7,6 +7,9 @@ module.exports = {
 				win: {
 					icon: "public/icon.ico",
 				},
+				directories: {
+					buildResources: "src/assets",
+				},
 			},
 		},
 	},

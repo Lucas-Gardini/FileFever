@@ -8,15 +8,22 @@ class ExpressServer {
 
 	init() {
 		const fs = require("fs");
+		const cors = require("cors");
 		if (!fs.existsSync("./assets")) {
 			fs.mkdirSync("./assets");
 		}
 		if (!fs.existsSync("./assets/upload/")) {
 			fs.mkdirSync("./assets/upload/");
 		}
+		this.app.use(
+			cors({
+				allowedHeaders: "*",
+			})
+		);
 		this.app.use(this.express.static("./assets/upload"));
 
 		this.app.get("/files", (req, res) => {
+			console.log(fs.readdirSync("./assets/upload"));
 			res.json({ files: fs.readdirSync("./assets/upload") });
 		});
 

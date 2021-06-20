@@ -172,7 +172,7 @@ export default {
 				fs.mkdirSync("./assets");
 			}
 			if (!fs.existsSync("./assets/upload/")) {
-				fs.mkdirSync("./assets/upload/	");
+				fs.mkdirSync("./assets/upload/");
 			}
 			this.files = fs.readdirSync("./assets/upload");
 			this.server = await new ExpressServer(this.port);

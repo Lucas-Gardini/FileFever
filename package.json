@@ -1,5 +1,5 @@
 {
-	"name": "kowalski-device-share",
+	"name": "FileFever",
 	"version": "0.1.0",
 	"author": {
 		"email": "lucasgardini.dias@hotmail.com",
@@ -23,6 +23,7 @@
 		"@mdi/font": "^5.9.55",
 		"axios": "^0.21.1",
 		"core-js": "^3.6.5",
+		"cors": "^2.8.5",
 		"express": "^4.17.1",
 		"internal-ip": "^6.2.0",
 		"mdb-vue-ui-kit": "*",
